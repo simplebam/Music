@@ -1,0 +1,57 @@
+ext {
+    //项目中的Project/musicodo_config.gradle配置仅仅属于Musicodo
+    android = [
+            // Sdk and tools
+            buildToolsVersion: '27.0.2',
+            supportVersion   : '27.0.2',
+            minSdkVersion    : 15,
+            compileSdkVersion: 27,
+            targetSdkVersion : 27,
+            applicationId    : "com.yueyue.musicdodo",
+            versionCode      : 1,
+            versionName      : "1.0",
+            resConfigs       : "zh",
+    ]
+
+    weather = [
+            name : "WeatherKey",
+            value: "b9e05332eea2426fb74de09c14c77227"
+    ]
+
+    fir = [
+            name : "FirToken",
+            value: "5a937aaf959d6953999429c4"
+    ]
+
+    alipay = [
+            name : "ALiPayKey",
+            value: "a6x05642avlqmavn1qaak43"
+    ]
+
+    mistats_appid = [
+            name  : "MiStatsAppID",
+            value : "2882303761517612812*",
+    ]
+
+    mistats_appkey = [
+            name  : "MiStatsAppKey",
+            value : "5641761220812*",
+    ]
+
+
+
+
+
+    // App dependencies
+    support_version = '27.0.2'
+    constraintlayout_version = '1.0.2'
+    yankai_victor_version = '1.0.4'
+    rxandroid_version = '2.0.1'
+    rxjava_version = '2.1.8'
+    gson_version = '2.8.2'
+    glide_version = '3.8.0'
+    glide_transformations_version = '3.1.1'
+    gpuimage_lib_version = '1.4.1'
+    butterknife_version = '8.8.1'
+    alipayzerosdk_version = '1.1'
+}
