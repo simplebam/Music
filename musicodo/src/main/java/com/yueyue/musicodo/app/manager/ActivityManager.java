@@ -8,7 +8,7 @@ import android.os.Build;
 import android.support.annotation.NonNull;
 import android.support.v4.content.FileProvider;
 
-import com.yueyue.musicodo.MainActivity;
+import com.yueyue.musicodo.main.MainActivity;
 import com.yueyue.musicodo.R;
 
 import java.io.File;

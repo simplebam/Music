@@ -37,12 +37,17 @@
 
         <activity android:name=".app.RootActivity"/>
 
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".app.SplashActivity"
+            android:theme="@style/AppTheme.Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
+        </activity>
+
+        <activity android:name=".main.MainActivity">
         </activity>
 
     </application>

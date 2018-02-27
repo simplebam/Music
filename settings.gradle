@@ -1,1 +1,1 @@
-include ':musicodo', ':testmodule'
+include ':musicodo'

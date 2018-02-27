@@ -1,6 +1,7 @@
 package com.yueyue.musicodo.app;
 
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 
 import com.yueyue.musicodo.R;
@@ -28,7 +29,7 @@ public class RootActivity extends AppCompatActivity {
     protected DBMusicocoController dbController;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         appPreference = new AppPreference(this);
@@ -37,11 +38,9 @@ public class RootActivity extends AppCompatActivity {
         settingPreference = new SettingPreference(this);
 
         checkTheme();
-
         dbController = new DBMusicocoController(this, true);
 
         ActivityManager.getInstance().addActivity(this);
-
     }
 
     protected void checkTheme() {
@@ -54,10 +53,22 @@ public class RootActivity extends AppCompatActivity {
     }
 
     @Override
+    protected void onDestroy() {
+        super.onDestroy();
+
+        if (dbController != null) {
+            dbController.close();
+        }
+
+        // NOTICE: 2017/9/6 注意 修复内存泄漏
+        ActivityManager.getInstance().removeActivity(this);
+
+    }
+
+    @Override
     protected void onResume() {
         super.onResume();
 
-        // FIXME: 2018/2/26 等小米开发者通过先
 //        if (Init.xiaomiStatisticalervicesInitSuccess) {
 //            MiStatInterface.recordPageStart(this, this.getClass().getName());
 //        }
@@ -69,19 +80,5 @@ public class RootActivity extends AppCompatActivity {
 //        if (Init.xiaomiStatisticalervicesInitSuccess) {
 //            MiStatInterface.recordPageEnd();
 //        }
-    }
-
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-
-        if (dbController != null) {
-            dbController.close();
-        }
-
-        // NOTICE: 2018/02/27  修复内存泄漏
-        ActivityManager.getInstance().removeActivity(this);
-
     }
 }
