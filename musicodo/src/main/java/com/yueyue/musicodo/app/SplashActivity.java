@@ -85,7 +85,7 @@ public class SplashActivity extends InspectActivity {
                 (TextView) findViewById(R.id.splash_i),
                 (TextView) findViewById(R.id.splash_c),
                 (TextView) findViewById(R.id.splash_o),
-                (TextView) findViewById(R.id.splash_c1),
+                (TextView) findViewById(R.id.splash_d),
                 (TextView) findViewById(R.id.splash_o1)
         };
         ts[0].post(new Runnable() {
@@ -257,8 +257,7 @@ public class SplashActivity extends InspectActivity {
         initAppDataIfNeed();
 
         //   耗时，启动服务之前先准备好数据
-        // FIXME: 2018/2/28 开始着手看PlayService源码
-//        startService();
+        startService();
 
         return true;
     }
@@ -294,7 +293,7 @@ public class SplashActivity extends InspectActivity {
     }
 
     private void startMainActivity() {
-        ActivityManager.getInstance().startMainActivity(this);
+        MainActivity.launch(this);
         finish();
     }
 

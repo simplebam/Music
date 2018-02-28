@@ -103,14 +103,14 @@
         app:layout_constraintTop_toTopOf="@+id/splash_c"/>
 
     <TextView
-        android:id="@+id/splash_c1"
+        android:id="@+id/splash_d"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="0dp"
         android:layout_marginLeft="0dp"
         android:layout_marginTop="0dp"
         android:padding="2dp"
-        android:text="c"
+        android:text="d"
         android:textColor="@color/white"
         android:textSize="@dimen/text_large_l"
         android:visibility="invisible"
@@ -130,9 +130,9 @@
         android:textColor="@color/white"
         android:textSize="@dimen/text_large_l"
         android:visibility="invisible"
-        app:layout_constraintBottom_toBottomOf="@+id/splash_c1"
-        app:layout_constraintLeft_toRightOf="@+id/splash_c1"
-        app:layout_constraintTop_toTopOf="@+id/splash_c1"/>
+        app:layout_constraintBottom_toBottomOf="@+id/splash_d"
+        app:layout_constraintLeft_toRightOf="@+id/splash_d"
+        app:layout_constraintTop_toTopOf="@+id/splash_d"/>
 
     <TextView
         android:id="@+id/splash_name"

@@ -12,6 +12,7 @@ import com.yueyue.musicodo.aidl.Song;
 import com.yueyue.musicodo.app.interfaces.PermissionRequestCallback;
 import com.yueyue.musicodo.app.manager.MediaManager;
 import com.yueyue.musicodo.app.manager.PermissionManager;
+import com.yueyue.musicodo.app.manager.PlayServiceManager;
 import com.yueyue.musicodo.util.MediaUtils;
 
 import java.util.ArrayList;
@@ -123,8 +124,8 @@ public abstract class InspectActivity extends RootActivity implements Permission
      * 服务端也能继续运行 ？？？
      * 方法加多一个Or，到时删除
      */
-    protected void startServiceOr() {
-//        PlayServiceManager.startPlayService(this);
+    protected void startService() {
+        PlayServiceManager.startPlayService(this);
     }
 
 }
