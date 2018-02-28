@@ -53,6 +53,7 @@
       (垂直的LinearLayout加强版),它在内部做了很多滚动事件的封装
       <--(寄生) CollapsingToolBarLayout(可折叠式标题栏)
         * CoordinatorLayout:[CoordinatorLayout与滚动的处理-泡在网上的日子](http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2015/0717/3196.html)
+          以及 [Material Design之CollapsingToolbarLayout使用 - CSDN博客](http://blog.csdn.net/u010687392/article/details/46906657)
         * DrawLayout:
           * [android官方侧滑菜单DrawerLayout详解 - 泡在网上的日子](http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2014/0925/1713.html)
           * [用Android自带的DrawerLayout和ActionBarDrawerToggle实现侧滑效

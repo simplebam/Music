@@ -2,7 +2,7 @@
 音乐播放器的集合
 
 
-## Musicodo
+## [Musicodo](./musicodo/README.md)
 音乐是一款开源Android手机本地音乐文件播放器,致敬Musicoco
 
 
