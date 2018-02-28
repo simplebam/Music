@@ -8,11 +8,11 @@ import com.yueyue.musicodo.R;
 import com.yueyue.musicodo.app.manager.ActivityManager;
 import com.yueyue.musicodo.db.DBMusicocoController;
 
-import preference.AppPreference;
-import preference.AuxiliaryPreference;
-import preference.PlayPreference;
-import preference.SettingPreference;
-import preference.ThemeEnum;
+import com.yueyue.musicodo.preference.AppPreference;
+import com.yueyue.musicodo.preference.AuxiliaryPreference;
+import com.yueyue.musicodo.preference.PlayPreference;
+import com.yueyue.musicodo.preference.SettingPreference;
+import com.yueyue.musicodo.preference.ThemeEnum;
 
 /**
  * author : yueyue on 2018/2/26 17:03

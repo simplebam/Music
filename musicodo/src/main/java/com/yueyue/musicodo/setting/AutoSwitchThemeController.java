@@ -11,8 +11,8 @@ import com.yueyue.musicodo.app.manager.BroadcastManager;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 
-import preference.AppPreference;
-import preference.ThemeEnum;
+import com.yueyue.musicodo.preference.AppPreference;
+import com.yueyue.musicodo.preference.ThemeEnum;
 
 /**
  * author : yueyue on 2018/2/26 17:34

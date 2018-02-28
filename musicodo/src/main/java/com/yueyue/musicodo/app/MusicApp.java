@@ -5,7 +5,7 @@ import android.content.Context;
 
 import com.yueyue.musicodo.setting.AutoSwitchThemeController;
 
-import preference.SettingPreference;
+import com.yueyue.musicodo.preference.SettingPreference;
 
 /**
  * author : yueyue on 2018/2/26 17:03

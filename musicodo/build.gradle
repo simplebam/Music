@@ -3,8 +3,8 @@ apply plugin: 'com.android.application'
 android {
     def app = rootProject.ext.android
 
-    compileSdkVersion app.compileSdkVersion
-    buildToolsVersion app.buildToolsVersion
+    compileSdkVersion 27
+    buildToolsVersion '27.0.2'
 
     defaultConfig {
         applicationId app.applicationId
@@ -108,5 +108,4 @@ dependencies {
     //glide-transformations   https://github.com/wasabeef/glide-transformations
     implementation "jp.wasabeef:glide-transformations:$rootProject.ext.glide_transformations_version"
     implementation "jp.co.cyberagent.android.gpuimage:gpuimage-library:$rootProject.ext.gpuimage_lib_version"
-
 }

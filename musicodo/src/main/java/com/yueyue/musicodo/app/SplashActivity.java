@@ -99,7 +99,7 @@ public class SplashActivity extends InspectActivity {
         });
     }
 
-    private void startTextInAnim(TextView t) {
+    private void startTextInAnim(@Nullable TextView t) {
         Random r = new Random();
         DisplayMetrics metrics = Utils.getMetrics(this);
         int x = r.nextInt(metrics.widthPixels * 4 / 3);
@@ -116,7 +116,7 @@ public class SplashActivity extends InspectActivity {
         set.setDuration(1800);
         set.setInterpolator(new AccelerateDecelerateInterpolator());
         set.play(tranX).with(tranY).with(scaleX).with(scaleY).with(alpha);
-        if (t == findViewById(R.id.splash_o1)) {
+        if (t.getId() == R.id.splash_o1) {
             set.addListener(new Animator.AnimatorListener() {
                 @Override
                 public void onAnimationStart(Animator animation) {
@@ -145,7 +145,7 @@ public class SplashActivity extends InspectActivity {
     private void startFinalAnim() {
         final ImageView image = (ImageView) findViewById(R.id.splash_logo);
         final TextView name = (TextView) findViewById(R.id.splash_name);
-
+        //ObjectAnimator详解 - CSDN博客 http://blog.csdn.net/xiaochuanding/article/details/73290917
         ValueAnimator alpha = ObjectAnimator.ofFloat(image, "alpha", 0.0f, 1.0f);
         alpha.setDuration(1000);
         ValueAnimator alphaN = ObjectAnimator.ofFloat(name, "alpha", 0.0f, 1.0f);
@@ -257,7 +257,8 @@ public class SplashActivity extends InspectActivity {
         initAppDataIfNeed();
 
         //   耗时，启动服务之前先准备好数据
-        startService();
+        // FIXME: 2018/2/28 开始着手看PlayService源码
+//        startService();
 
         return true;
     }
@@ -286,7 +287,8 @@ public class SplashActivity extends InspectActivity {
         });
 
         DialogProvider p = new DialogProvider(this);
-        AlertDialog dialog = p.createInfosDialog(getString(R.string.tip), getString(R.string.info_empty_library_when_start));
+        AlertDialog dialog = p.createInfosDialog(getString(R.string.tip),
+                getString(R.string.info_empty_library_when_start));
         dialog.setCancelable(true);
         dialog.show();
     }

@@ -16,8 +16,8 @@ import com.victor.loading.rotate.RotateLoading;
 import com.yueyue.musicodo.R;
 import com.yueyue.musicodo.util.ColorUtils;
 
-import preference.AppPreference;
-import preference.ThemeEnum;
+import com.yueyue.musicodo.preference.AppPreference;
+import com.yueyue.musicodo.preference.ThemeEnum;
 
 /**
  * author : yueyue on 2018/2/27 21:01

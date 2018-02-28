@@ -1,4 +1,4 @@
-package preference;
+package com.yueyue.musicodo.preference;
 
 /**
  * author : yueyue on 2018/2/26 19:22

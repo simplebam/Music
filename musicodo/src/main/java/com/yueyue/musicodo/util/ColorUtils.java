@@ -9,8 +9,8 @@ import android.support.v7.graphics.Palette;
 
 import com.yueyue.musicodo.R;
 
-import preference.AppPreference;
-import preference.ThemeEnum;
+import com.yueyue.musicodo.preference.AppPreference;
+import com.yueyue.musicodo.preference.ThemeEnum;
 
 /**
  * author : yueyue on 2018/2/26 19:23

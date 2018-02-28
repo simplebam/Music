@@ -4,10 +4,9 @@ import android.os.Parcel;
 import android.os.Parcelable;
 
 /**
- * author : yueyue on 2018/2/26 22:54
+ * author : yueyue on 2018/2/27 21:05
  * desc   :
  */
-
 public class Song implements Parcelable {
 
     //与客户端 DBSongInfo 中的 data 域对应，对于同一首歌曲（文件路径相同），两者应该相同
@@ -58,4 +57,3 @@ public class Song implements Parcelable {
         }
     };
 }
-

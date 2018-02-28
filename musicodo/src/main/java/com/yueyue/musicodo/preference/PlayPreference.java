@@ -1,4 +1,4 @@
-package preference;
+package com.yueyue.musicodo.preference;
 
 import android.content.Context;
 import android.support.annotation.Nullable;
