@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Music.iml" filepath="$PROJECT_DIR$/Music.iml" />
+      <module fileurl="file://E:\acode\Android_Studio\Music\Music.iml" filepath="E:\acode\Android_Studio\Music\Music.iml" />
       <module fileurl="file://$PROJECT_DIR$/musicodo/musicodo.iml" filepath="$PROJECT_DIR$/musicodo/musicodo.iml" />
+      <module fileurl="file://E:\acode\Android_Studio\Music\musicodo\musicodo.iml" filepath="E:\acode\Android_Studio\Music\musicodo\musicodo.iml" />
     </modules>
   </component>
 </project>

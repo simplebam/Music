@@ -1,30 +1,29 @@
-# Music
+# Music  - 暂时搁置了(项目开发难度大,恢复期未知)
 音乐播放器的集合
 
 
-## [Musicodo](./musicodo/README.md)
-音乐是一款开源Android手机本地音乐文件播放器,致敬Musicoco
+## [Android开源在线音乐播放器——波尼音乐 - 简书 ](https://www.jianshu.com/p/1c0f5c4f64fa)
+* 该项目依赖库很少,没有涉及RxJava,retrofit等框架,是一个很好的打基础项目
+* 本来也是我首选模仿的Music项目,但由于模仿过程中发现作者的项目架构不明显(没按
+   模块化进行开发)以及涉及的逻辑复杂,只好忍心割痛放弃
 
 
 ### 功能特点
-* 通过耳机和通知栏快捷控制音乐播放
-* 创建歌单
-* 本地歌曲搜索
-* 歌曲多选操作
-* 记忆播放
-* 自动切换到夜间模式
-* 定时停止播放
-* 应用主题自定义
-* 播放界面风格选择。
+* 播放本地音乐与在线音乐
+* 在线音乐排行榜，如热歌榜、新歌榜等
+* 高仿云音乐的黑胶唱片专辑封面
+* 歌词显示，自动搜索歌词
+* 编辑歌曲信息
+* 夜间模式
+* 定时关闭
 
-应用开启了单独的播放服务进程，在服务进程中控制音乐播放逻辑
 
-仿照开源项目:[DuanJiaNing/Musicoco](https://github.com/DuanJiaNing/Musicoco)
+仿照开源项目:[Android开源在线音乐播放器——波尼音乐 - 简书](https://www.jianshu.com/p/1c0f5c4f64fa)
 
 ### 项目截图
-<a href="./art/musicodo_main1.jpg"><img src="./art/musicodo_main1.jpg" width="20%" height="20%"/></a><img height="0" width="10px"/><a href="./art/musicodo_main2.jpg"><img src="./art/musicodo_main2.jpg" width="20%"  height="20%"/></a><img height="0" width="10px"/><a href="./art/musicodo_play1.jpg"><img src="./art/musicodo_play1.jpg" width="20%"  height="20%"/></a>
 
-App体验地址:[Musicoco - fir.im](https://github.com/DuanJiaNing/Musicoco/raw/master/apk/app-release-v1.1.0.apk)
+
+App体验地址:[波尼音乐](https://www.pgyer.com/ponymusic)
 
 
 ## ListenerMusicPlayer
@@ -60,17 +59,9 @@ App体验地址:[Musicoco - fir.im](https://github.com/DuanJiaNing/Musicoco/raw/
 
     解决也很简单啦:[【Android笔记-异常-8】在引入AndResGuard时异常 - CSDN博客](http://blog.csdn.net/xihuandaxiaojie/article/details/78713808)
     ,按照教程所言的把这个插件更新更新到最新版即可,该插件的地址:[传送门](https://github.com/shwenzhang/AndResGuard)
-  * 等到学了MVP有时间再来挑战,MVP入门推荐项目:[ReadHub资讯客户端](https://github.com/BryantPang/ReadHub)
-
-仿照开源项目:[hefuyicoder/ListenerMusicPlayer: A Grace Material Design Music Player](https://github.com/hefuyicoder/ListenerMusicPlayer)
-         或者[听听，一款优雅的开源音乐播放器 | 乌有先生的个人博客](http://hefuyicoder.com/2017/04/15/%E5%90%AC%E5%90%AC%EF%BC%8C%E4%B8%80%E6%AC%BE%E4%BC%98%E9%9B%85%E7%9A%84%E5%BC%80%E6%BA%90%E9%9F%B3%E4%B9%90%E6%92%AD%E6%94%BE%E5%99%A8/)
 
 
-## 其他类似优秀项目
-* [Android开源在线音乐播放器——波尼音乐 - 简书 ](https://www.jianshu.com/p/1c0f5c4f64fa)
-  * 该项目依赖库很少,没有涉及RxJava,retrofit等框架,是一个很好的打基础项目
-  * 本来也是我首选模仿的Music项目,但由于模仿过程中发现作者的项目架构不明显(没按
-    模块化进行开发)以及涉及的逻辑复杂,只好忍心割痛放弃
+## 其他优秀项目
 * [simplebam/Weather: 天气应用App合集](https://github.com/simplebam/Weather)
   * 很多朋友看完郭神的[第一行代码](http://blog.csdn.net/guolin_blog/article/details/52032038)
     之后就开始信心足足去博客或者公众号找优质的资源,有些人收到的效果很好,但有些人
